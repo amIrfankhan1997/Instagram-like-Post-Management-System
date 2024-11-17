@@ -1,0 +1,197 @@
+/* PostsList.css *5
+
+/* General Layout */
+.posts-container {
+    max-width: 450px;
+    /* Decreased overall width for the entire container */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #343030;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.h1{
+    color: red;
+}
+/* Post Container (Card) */
+.post-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 12px;
+    /* Reduced padding inside card */
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 100%;
+    /* Decreased width to make the card smaller */
+    max-width: 350px;
+    /* Maximum card width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Post Image */
+.post-image {
+    width: 100%;
+    max-width: 200px;
+    /* Smaller image */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: block;
+    object-fit: cover;
+}
+
+.post-title {
+    font-size: 1.6rem;
+    /* Increased size for better visibility */
+    font-weight: 600;
+    /* Semi-bold for a professional look */
+    text-align: center;
+    margin-bottom: 8px;
+    color: #343a40;
+    /* Darker gray for a modern look */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Updated font */
+    letter-spacing: 0.5px;
+    /* Slight letter spacing for readability */
+    line-height: 1.2;
+    /* Improved line height */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+
+    /* Add underline */
+    text-decoration: underline;
+    text-decoration-color: #007bff;
+    /* You can change this color to whatever you like */
+    text-underline-offset: 4px;
+    /* Adjust this value to move the underline down or up */
+}
+
+.post-description {
+    font-size: 1rem;
+    /* Slightly larger for better readability */
+    font-weight: 400;
+    /* Normal weight for contrast with the title */
+    text-align: center;
+    margin-bottom: 15px;
+    color: #6c757d;
+    /* Softer gray for a balanced look */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Matching font style */
+    line-height: 1.5;
+    /* Improved line height for better readability */
+    padding: 0 10px;
+    /* Padding for a cleaner look */
+}
+
+/* Buttons Container */
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* Individual Button Styling */
+.button {
+    padding: 8px 15px;
+    /* Smaller padding for buttons */
+    font-size: 0.9rem;
+    /* Slightly smaller font size */
+    background-color: #e9edf3;
+    /* Professional blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    /* background-color: #0056b3; */
+    transform: translateY(-2px);
+}
+
+/* Delete Button with Red Color */
+.button.delete {
+    background-color: #e6d6d7;
+}
+
+.button.delete:hover {
+    background-color: #c5a2a5;
+}
+
+/* Comment Section */
+.comment-section {
+    width: 90%;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.comment-section h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.comment-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.comment-item p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #555;
+}
+
+/* Comment Input Area */
+textarea {
+    width: 100%;
+    padding: 6px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    max-width: 400px;
+    /* Smaller input box */
+    min-height: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Add Comment Button */
+.add-comment-btn {
+    padding: 8px 15px;
+    background-color: #28a745;
+    /* Green color for adding comments */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 150px;
+    font-size: 0.9rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-comment-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}

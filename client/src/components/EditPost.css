@@ -1,0 +1,161 @@
+/* General Layout for Edit Post */
+.edit-post-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(209, 198, 198);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Styling for the buttons container */
+.form-buttons {
+    display: flex;
+    /* Enables horizontal layout */
+    justify-content: flex-start;
+    /* Align buttons to the left */
+    gap: 10px;
+    /* Space between buttons */
+    margin-top: 20px;
+}
+
+/* Styling for the submit button */
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the cancel button */
+.cancel-btn {
+    background-color: #df2424;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cancel-btn:hover {
+    background-color: #9e3a3a;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+form label {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Input Field Styling */
+input[type='text'],
+textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input[type='text']:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+/* Image Upload Section */
+input[type='file'] {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+img {
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button[type='submit'] {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+button[type='submit']:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+/* Styling for the cancel button */
+/* .cancel-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cancel-btn:hover {
+    background-color: #5a6268;
+} */
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    .edit-post-container {
+        padding: 15px;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    input[type='text'],
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    button[type='submit'] {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
